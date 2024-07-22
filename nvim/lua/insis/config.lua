@@ -360,17 +360,17 @@ local UserConfig = {
 
   ---@class FrontendConfig
   frontend = {
-    enable = false,
+    enable = true,
     ---@type "eslint" | false
     linter = "eslint", -- :EslintFixAll command added
     ---@type false | "prettier" | "tsserver"
     formatter = "tsserver",
-    format_on_save = false,
+    format_on_save = true,
     cspell = false,
     tailwindcss = true,
     prisma = false,
     -- vue will take over typescript lsp
-    vue = false,
+    vue = true,
     -- extra lsp command provided by typescript.nvim
     typescript = {
       keys = {
@@ -386,20 +386,20 @@ local UserConfig = {
 
   ---@class ClangdConfig
   clangd = {
-    enable = false,
+    enable = true,
     lsp = "clangd",
     -- linter = "clangd-tidy",
     formatter = "clang-format",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class GolangConfig
   golang = {
-    enable = false,
+    enable = true,
     lsp = "gopls",
     linter = "golangci-lint",
     formatter = "gofmt",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class LuaConfig
@@ -416,21 +416,21 @@ local UserConfig = {
     lsp = "rust_analyzer",
     -- rustup component add rustfmt
     formatter = "rustfmt",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class BashConfig
   bash = {
-    enable = false,
+    enable = true,
     lsp = "bashls",
     --  brew install shfmt
     formatter = "shfmt",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class PythonConfig
   python = {
-    enable = false,
+    enable = true,
     -- can be pylsp or pyright
     lsp = "pylsp",
     -- pip install black
@@ -450,16 +450,16 @@ local UserConfig = {
 
   ---@class JsonConfig
   json = {
-    enable = false,
+    enable = true,
     lsp = "jsonls",
     ---@type "jsonls" | "prettier"
     formatter = "jsonls",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class MarkdownConfig
   markdown = {
-    enable = false,
+    enable = true,
     mkdnflow = {
       next_link = "gn",
       prev_link = "gp",
@@ -470,7 +470,7 @@ local UserConfig = {
       toggle_item = "tt",
     },
     formatter = "prettier",
-    format_on_save = false,
+    format_on_save = true,
     wrap = true,
     ---@type "dark" | "light"
     theme = "dark",
@@ -478,22 +478,22 @@ local UserConfig = {
 
   ---@class TomlConfig
   toml = {
-    enable = false,
+    enable = true,
     lsp = "taplo",
   },
 
   ---@class YamlConfig
   yaml = {
-    enable = false,
+    enable = true,
     lsp = "yamlls",
     ---@type "prettier" | false
     formatter = "prettier",
-    format_on_save = false,
+    format_on_save = true,
   },
 
   ---@class DockerConfig
   docker = {
-    enable = false,
+    enable = true,
     lsp = "dockerls",
   },
 
@@ -507,7 +507,7 @@ local UserConfig = {
 
   ---@class JavaConfig
   java = {
-    enable = false,
+    enable = true,
   },
 
   ---@class GitConfig
