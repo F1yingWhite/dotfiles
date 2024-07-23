@@ -29,10 +29,10 @@ bar=(
 	sticky=on
 	padding_right=10
 	padding_left=10
-	y_offset=-1
-	margin=-1
-	corner_radius=0
-	blur_radius=0
+	y_offset=3
+	margin=10
+	corner_radius=6
+	blur_radius=3
 	shadow=on
 )
 

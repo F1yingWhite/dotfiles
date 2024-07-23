@@ -23,7 +23,7 @@ style = "Regular"
 # window setting
 [window]
 opacity = 0.6
-#decorations = "Buttonless"
+decorations = "Buttonless"
 dynamic_padding = true
 blur = true 
 dimensions = { columns = 120, lines = 35 }
