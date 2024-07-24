@@ -9,15 +9,15 @@ live_config_reload = true
 size = 13.0
 
 [font.bold]
-family = "Jetbrainsmono nerd font"
+family = "jetbrainsmono nerd font"
 style = "Bold"
 
 [font.italic]
-family = "Jetbrainsmono nerd font"
+family = "jetbrainsmono nerd font"
 style = "Italic"
 
 [font.normal]
-family = "Jetbrainsmono nerd font"
+family = "jetbrainsmono nerd font"
 style = "Regular"
 
 # window setting
