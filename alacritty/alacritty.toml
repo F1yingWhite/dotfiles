@@ -9,15 +9,15 @@ live_config_reload = true
 size = 13.0
 
 [font.bold]
-family = "jetbrainsmono nerd font"
+family = "firacode nerd font"
 style = "Bold"
 
 [font.italic]
-family = "jetbrainsmono nerd font"
+family = "firacode nerd font"
 style = "Italic"
 
 [font.normal]
-family = "jetbrainsmono nerd font"
+family = "firacode nerd font"
 style = "Regular"
 
 # window setting
@@ -25,7 +25,7 @@ style = "Regular"
 opacity = 0.6
 decorations = "Buttonless"
 dynamic_padding = true
-blur = true 
+blur = false 
 dimensions = { columns = 120, lines = 35 }
 
 [cursor] 
