@@ -25,7 +25,7 @@ style = "Regular"
 opacity = 0.6
 decorations = "Buttonless"
 dynamic_padding = true
-blur = false 
+blur = true 
 dimensions = { columns = 120, lines = 35 }
 
 [cursor] 
