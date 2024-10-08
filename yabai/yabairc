@@ -12,37 +12,36 @@
 #
 
 # global settings
-yabai -m config                                 \
-    external_bar                 all:30:0       \
-    menubar_opacity              1.0            \
-    mouse_follows_focus          off            \
-    focus_follows_mouse          off            \
-    display_arrangement_order    default        \
-    window_origin_display        default        \
-    window_placement             second_child   \
-    window_zoom_persist          on             \
-    window_shadow                on             \
-    window_animation_duration    0.2            \
-    window_animation_easing      ease_out_quint  \
-    window_opacity_duration      0.0            \
-    active_window_opacity        1.0            \
-    normal_window_opacity        0.80           \
-    window_opacity               on            \
-    insert_feedback_color        0xffd75f5f     \
-    split_ratio                  0.50           \
-    split_type                   auto           \
-    auto_balance                 off            \
-    top_padding                  12             \
-    bottom_padding               12             \
-    left_padding                 12             \
-    right_padding                12             \
-    window_gap                   9             \
-    layout                       bsp            \
-    mouse_modifier               fn             \
-    mouse_action1                move           \
-    mouse_action2                resize         \
-    mouse_drop_action            swap
-
+yabai -m config \
+  external_bar all:00:0 \
+  menubar_opacity 1.0 \
+  mouse_follows_focus off \
+  focus_follows_mouse off \
+  display_arrangement_order default \
+  window_origin_display default \
+  window_placement second_child \
+  window_zoom_persist on \
+  window_shadow on \
+  window_animation_duration 0.2 \
+  window_animation_easing ease_out_quint \
+  window_opacity_duration 0.0 \
+  active_window_opacity 1.0 \
+  normal_window_opacity 0.80 \
+  window_opacity on \
+  insert_feedback_color 0xffd75f5f \
+  split_ratio 0.50 \
+  split_type auto \
+  auto_balance off \
+  top_padding 12 \
+  bottom_padding 12 \
+  left_padding 12 \
+  right_padding 12 \
+  window_gap 9 \
+  layout bsp \
+  mouse_modifier fn \
+  mouse_action1 move \
+  mouse_action2 resize \
+  mouse_drop_action swap
 
 # on|off 显示｜不显示边框
 #yabai -m config window_border      on
@@ -53,13 +52,11 @@ yabai -m config                                 \
 #普通的边框颜色
 #yabai -m config normal_window_border_color 0xff555555
 
-
-
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^系统设置$" manage=off
 yabai -m rule --add app="^微信$" manage=off
 yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^QQ音乐$" manage=off
-
+yabai -m rule --add app="^访达$" manage=off
 
 echo "yabai configuration loaded.."
