@@ -1,2 +1,6 @@
 clash/
-
+pip/
+uv/
+vscode-sqltools/
+zsh/.zsh_history
+configstore
