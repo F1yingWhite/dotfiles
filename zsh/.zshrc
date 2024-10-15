@@ -218,4 +218,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 
 . "$HOME/.cargo/env"
-fastfetch
+
+if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 26 ]; then
+  fastfetch
+fi
+
