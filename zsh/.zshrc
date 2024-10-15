@@ -137,6 +137,11 @@ export HOMEBREW_AUTO_UPDATE_SECS=7200
 export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
+export EDITOR="nvim"
+
+
+
+
 
 
 # >>> conda initialize >>>
@@ -153,6 +158,16 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# function
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # Helpful aliases
 alias cls='clear; fastfetch' # clear terminal
