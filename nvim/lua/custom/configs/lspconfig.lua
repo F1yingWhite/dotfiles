@@ -5,7 +5,7 @@ local capabilities = config.capabilities
 local lspconfig = require('lspconfig')
 local util = require 'lspconfig/util'
 
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   init_options = {
