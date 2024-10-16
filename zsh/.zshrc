@@ -128,20 +128,15 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
 
-
+# Begin of my configuration
 export LC_CTYPE=zh_CN.UTF-8
 eval "$(starship init zsh)"
-source <(fzf --zsh)
 export HOMEBREW_AUTO_UPDATE_SECS=7200
 # web config
 export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 export EDITOR="nvim"
-
-
-
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
