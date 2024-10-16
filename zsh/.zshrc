@@ -168,6 +168,7 @@ alias cls='clear; fastfetch' # clear terminal
 alias  c='clear'
 alias  l='eza -lh  --icons=auto' # long list
 alias ls='eza -1   --icons=auto' # short list
+alias 'la'='ls -a'
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
@@ -185,7 +186,20 @@ alias .5='cd ../../../../..'
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
-eval "$(fzf --zsh)"
+
+# fzf config
+BAT_THEME="Catppuccin Mocha"
+source <(fzf --zsh)
+export FZF_DEFAULT_OPTS="\
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--preview 'bat --color=always --line-range :500 {}' \
+--preview-window=right:60%:wrap  
+--preview-window=right:60%:wrap --height 70% --layout=reverse --border \
+"
+
 eval "$(zoxide init --cmd cd zsh)"
 
 # kitty的配置
@@ -195,6 +209,7 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
+# 关于历史记录的一些配置
 HISTSIZE=5000
 HISTFILE=~/.config/zsh/.zsh_history
 SAVEHIST=$HISTSIZE
@@ -213,9 +228,8 @@ zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
-
 . "$HOME/.cargo/env"
-
+# 设置fastfetch的输出条件
 if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 26 ]; then
   fastfetch
 fi
