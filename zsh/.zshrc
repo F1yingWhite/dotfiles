@@ -196,9 +196,11 @@ export FZF_DEFAULT_OPTS="\
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
---preview 'bat --color=always --line-range :500 {}' \
+--preview '~/.config/zsh/fzf_preview.sh {}' \
 --preview-window=right:60%:wrap --height 70% --tmux bottom,70% --layout=reverse --border \
 "
+
+
 
 eval "$(zoxide init --cmd cd zsh)"
 
