@@ -193,6 +193,9 @@ alias mkdir='mkdir -p'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# kitty的配置
+alias icat="kitten icat"
+
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
