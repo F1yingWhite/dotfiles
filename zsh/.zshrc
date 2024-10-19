@@ -137,7 +137,8 @@ export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 export EDITOR="nvim"
-
+# bun completions
+[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -183,7 +184,7 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-
+alias cat=bat
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 alias vimf='vim $(fzf)'
@@ -247,7 +248,8 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 . "$HOME/.cargo/env"
 # 设置fastfetch的输出条件
-if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 26 ]; then
+if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 30 ]; then
   fastfetch
 fi
+
 
