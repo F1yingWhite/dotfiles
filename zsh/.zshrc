@@ -137,8 +137,9 @@ export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 export EDITOR="nvim"
-# bun completions
-[ -s "~/.bun/_bun" ] && source "~/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="/Users/flyingwhite/.local/bin:$PATH"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -202,7 +203,6 @@ export FZF_DEFAULT_OPTS="\
 "
 
 
-
 eval "$(zoxide init --cmd cd zsh)"
 
 # kitty的配置
@@ -253,3 +253,4 @@ if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 30 ]; then
 fi
 
 
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
