@@ -1,0 +1,5 @@
+# FILE AUTOMATICALLY GENERATED FROM /data7/xyh/.config/zsh/.zimrc
+# EDIT THE SOURCE FILE AND THEN RUN zimfw build. DO NOT DIRECTLY EDIT THIS FILE!
+
+if [[ -e ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]] zimfw() { source "${HOME}/.config/zsh/.zim/zimfw.zsh" "${@}" }
+fpath=("${HOME}/.config/zsh/.zim/modules/zsh-completions/src" ${fpath})

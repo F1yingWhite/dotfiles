@@ -187,4 +187,12 @@ eval "$(starship init zsh)"
 if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 26 ]; then
   fastfetch
 fi
+export HF_ENDPOINT=https://hf-mirror.com
 
+# pnpm
+export PNPM_HOME="/data7/xyh/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
