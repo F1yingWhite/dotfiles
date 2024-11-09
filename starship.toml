@@ -12,12 +12,13 @@ $env_var\
 $jobs\
 $sudo\
 $username\
-$character"""
+$character\
+$directory
+"""
 
 right_format = """
 $singularity\
 $kubernetes\
-$directory\
 $vcsh\
 $fossil_branch\
 $git_branch\
@@ -117,10 +118,10 @@ disabled = false
 show_always = false
 
 [directory]
-home_symbol = "⌂"
+home_symbol = "⌂ "
 truncation_length = 2
 truncation_symbol = "□ "
-read_only = " ◈"
+read_only = " ◈ "
 use_os_path_sep = true
 style = "italic blue"
 format = '[$path]($style)[$read_only]($read_only_style)'
