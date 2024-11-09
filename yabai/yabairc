@@ -54,6 +54,7 @@ yabai -m config \
 yabai -m rule --add app="^System Preferences$" manage=off
 yabai -m rule --add app="^系统设置$" manage=off
 yabai -m rule --add app="^微信$" manage=off
+yabai -m rule --add app="^微信（测试版）$" manage=off
 yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^QQ音乐$" manage=off
 yabai -m rule --add app="^访达$" manage=off
