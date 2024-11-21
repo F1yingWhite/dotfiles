@@ -9,7 +9,7 @@ return {
   },
   {
     "nvimdev/dashboard-nvim",
-    lazy = false, -- As https://github.com/nvimdev/dashboard-nvim/pull/450, dashboard-nvim shouldn't be lazy-loaded to properly handle stdin.
+    lazy = false,
     opts = function()
       local logo = [[
      ⣇⣿⠘⣿⣿⣿⡿⡿⣟⣟⢟⢟⢝⠵⡝⣿⡿⢂⣼⣿⣷⣌⠩⡫⡻⣝⠹⢿⣿⣷
@@ -87,6 +87,11 @@ return {
     config = function()
       vim.g.mkdp_auto_start = 1
     end,
+  },
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    opts = {},
   },
   {
     "Pocco81/auto-save.nvim",
