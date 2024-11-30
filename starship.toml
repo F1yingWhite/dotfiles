@@ -255,7 +255,7 @@ style = "dimmed white"
 format = "[ $percentage $symbol]($style)"
 full_symbol = "[█](green)"
 charging_symbol = "[↑](green)"
-discharging_symbol = "[↓]"
+discharging_symbol = "[↓](yellow)"
 unknown_symbol = "[░]"
 empty_symbol = "[▃](red)"
 

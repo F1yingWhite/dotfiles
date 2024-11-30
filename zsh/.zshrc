@@ -140,6 +140,9 @@ export EDITOR="nvim"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="/Users/flyingwhite/.local/bin:$PATH"
+export UV_PYPY_INSTALL_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -254,3 +257,4 @@ fi
 
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
