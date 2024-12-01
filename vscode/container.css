@@ -53,7 +53,7 @@
 .monaco-hover:not(.hidden) {
   padding: 1em 2em !important;
   font-family: "Jetbrains mono", "汉仪正圆", monospace;
-  border: 1px solid rgb(36, 40, 48) !important;
+  /* border: 1px solid rgb(36, 40, 48) !important; */
   border-radius: 12px !important;
   background-color: transparent !important;
   backdrop-filter: blur(8px) brightness(120%);

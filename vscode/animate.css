@@ -1,5 +1,3 @@
-/* 这里的都没解耦 */
-
 /* 破坏性的特效 */
 .monaco-scrollable-element {
   animation: monacoScrollableElementAnimate 80ms ease;
@@ -123,7 +121,7 @@
 
   .monaco-list-row:hover {
     span.monaco-icon-name-container::after {
-      content: "👈";
+      content: "←";
       margin-left: 1em;
       display: inline-block;
       animation: fileSelectedhandRightInAnimate 0.3s ease;
