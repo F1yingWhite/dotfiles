@@ -174,7 +174,7 @@
 div.quick-input-widget {
   --vscode-quickInput-background: transparent !important;
   backdrop-filter: blur(12px) brightness(150%);
-  top: 20vh !important;
+  top: 25vh !important;
   animation: fadeBigIn 0.3s ease-in-out;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
