@@ -59,5 +59,6 @@ yabai -m rule --add app="^QQ$" manage=off
 yabai -m rule --add app="^QQ音乐$" manage=off
 yabai -m rule --add app="^访达$" manage=off
 yabai -m rule --add app="^ToDesk$" manage=off
+yabai -m rule --add app="^钉钉$" manage=off
 
 echo "yabai configuration loaded.."
