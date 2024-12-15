@@ -250,11 +250,11 @@ zstyle ':fzf-tab:*' switch-group '<' '>'
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 . "$HOME/.cargo/env"
-# 设置fastfetch的输出条件
-if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 30 ]; then
-  fastfetch
-fi
+# # 设置fastfetch的输出条件
+# if [ "$(tput cols)" -ge 76 ] && [ "$(tput lines)" -ge 30 ]; then
+#   fastfetch
+# fi
 
 
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
-
+eval $(thefuck --alias)
