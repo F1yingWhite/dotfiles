@@ -216,11 +216,12 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
 # 关于历史记录的一些配置
-HISTSIZE=5000
+HISTSIZE=500000
 HISTFILE=~/.config/zsh/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
+setopt EXTENDED_HISTORY
 setopt sharehistory
 setopt hist_ignore_space
 setopt hist_ignore_all_dups
