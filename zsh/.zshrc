@@ -172,7 +172,7 @@ function y() {
 alias cls='clear; fastfetch' # clear terminal
 alias  c='clear'
 alias  l='eza -lh  --icons=auto' # long list
-alias ls='eza -1   --icons=auto' # short list
+alias ls='eza --icons=auto' # short list
 alias 'la'='ls -a'
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs

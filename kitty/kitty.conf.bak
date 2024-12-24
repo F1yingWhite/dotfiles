@@ -1,5 +1,5 @@
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# Catppuccin-Macchiato
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -7,16 +7,9 @@ include current-theme.conf
 # font
 font_size 13.0
 font_family          JetBrains Mono Nerd
-bold_font            JetBrains Mono Nerd Bold
-italic_font          JetBrains Mono Nerd Italic
-bold_italic_font     JetBrains Mono Nerd Bold Italic
-font_features        JetBrains-Mono-Nerd-ExtraLight +cv01 +ss02 +ss04 +ss05 +zero
-font_features        jetbrains-mono-nerd-Bold +cv01 +ss02 +ss04 +ss05 +zero
-font_features        jetbrains-mono-nerd +cv01 +ss02 +ss04 +ss05 +zero
-font_features        jetbrains-mono-nerd-BoldItalic +cv01 +ss02 +ss04 +ss05 +zero
 
-background_opacity        0.50
-background_blur           44
+background_opacity        0.60
+background_blur           70 
 hide_window_decorations   yes
 confirm_os_window_close   0
 window_padding_width      20
