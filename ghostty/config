@@ -1,0 +1,13 @@
+theme = catppuccin-mocha
+font-family = "JetBrainsMono Nerd Font"
+font-family = "HarmonyOS Sans"
+font-size = 14
+macos-titlebar-style = transparent
+font-style = Medium
+cursor-style = block
+cursor-style-blink = false
+background-opacity = 0.6
+background-blur-radius = 20
+window-padding-x = 10
+window-new-tab-position = end
+macos-titlebar-proxy-icon = hidden

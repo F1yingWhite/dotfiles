@@ -30,7 +30,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = {  "catppuccin" } },
+  install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -51,6 +51,3 @@ require("lazy").setup({
     },
   },
 })
-
--- 设置光标的颜色默认为拉姆的发(fà)色
-vim.cmd("highlight Cursor gui=NONE guifg=bg guibg=#ffb6c1")

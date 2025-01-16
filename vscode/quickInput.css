@@ -1,0 +1,11 @@
+div.quick-input-widget {
+  backdrop-filter: blur(12px) brightness(150%);
+  top: 20vh !important;
+  animation: fadeBigIn 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* li.action-item.icon {
+  width: 42px;
+  height: 42px;
+} */
