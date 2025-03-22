@@ -1,0 +1,7 @@
+*
+!.gitignore
+!/hypr/
+!/fish/
+!starship.toml
+!chrome-flags.conf
+!code-flags.conf
