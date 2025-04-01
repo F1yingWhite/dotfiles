@@ -1,7 +1,7 @@
 *
 !.gitignore
-!fish/fish.conf
+!fish/
 !starship.toml
 !chrome-flags.conf
 !code-flags.conf
-!nvim
+!ghostty/
