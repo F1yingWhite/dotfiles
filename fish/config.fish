@@ -60,10 +60,12 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-alias cat=bat
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
 alias sudo='sudo -E'
+
+# brew
+set -x HOMEBREW_NO_AUTO_UPDATE false
 
 # uv
 fish_add_path "/Users/flyingwhite/.local/bin"

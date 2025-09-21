@@ -1,5 +1,4 @@
-font-family = "JetBrainsMono Nerd Font"
-font-family = "HarmonyOS Sans"
+font-family = "Maple Font"
 font-size = 14
 macos-titlebar-style = transparent
 font-style = Medium
@@ -10,3 +9,4 @@ background-blur-radius = 20
 window-padding-x = 10
 window-new-tab-position = end
 macos-titlebar-proxy-icon = hidden
+quit-after-last-window-closed=true
