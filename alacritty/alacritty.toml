@@ -1,0 +1,38 @@
+
+#import = [
+#    "~/.config/alacritty/themes/themes/night_owlish_light.toml"
+#]
+# font setting
+[font]
+size = 14.0
+
+[font.bold]
+family = "jetbrainsmono nerd font"
+style = "Bold"
+
+[font.italic]
+family = "jetbrainsmono nerd font"
+style = "Italic"
+
+[font.normal]
+family = "jetbrainsmono nerd font"
+style = "Regular"
+
+# window setting
+[window]
+opacity = 0.6
+decorations = "Buttonless"
+dynamic_padding = true
+blur = true 
+dimensions = { columns = 120, lines = 35 }
+option_as_alt = "Both"
+
+[cursor] 
+style = {blinking="on",shape = "Block" }
+
+
+[keyboard]
+bindings = [
+    { key = "Tab", mods = "Control", action = "SelectNextTab" },  # 选择下一个标签
+    { key = "Tab", mods = "Control|Shift", action = "SelectPreviousTab" } # 选择上一个标签
+]

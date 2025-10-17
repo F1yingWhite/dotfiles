@@ -1,0 +1,15 @@
+font-family = "Maple Font"
+font-size = 14
+macos-titlebar-style = transparent
+font-style = Medium
+cursor-style = block
+cursor-style-blink = false
+background-opacity = 0.6
+background-blur-radius = 20
+window-padding-x = 10
+window-new-tab-position = end
+macos-titlebar-proxy-icon = hidden
+quit-after-last-window-closed=true
+theme = ayu
+
+custom-shader = "~/.config/ghostty/shaders/cursor_smear.glsl"
