@@ -93,3 +93,15 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     l = 'resize width +50'
     enter = 'mode main'
     esc = 'mode main'
+
+[[on-window-detected]]
+    if.app-id = "com.tencent.xinWeChat"
+    run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "com.tencent.qq"
+    run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "com.tencent.qqmusic"
+    run = "layout floating"
