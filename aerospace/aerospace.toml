@@ -105,3 +105,16 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 [[on-window-detected]]
     if.app-id = "com.tencent.qqmusic"
     run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "com.tencent.xinWeChat"
+    run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "com.apple.finder"
+    run = "layout floating"
+
+[workspace-to-monitor-force-assignment]
+    8 = 'built-in'
+    9 = 'built-in'
+    10 = 'built-in'
