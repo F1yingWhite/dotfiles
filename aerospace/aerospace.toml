@@ -103,11 +103,15 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     run = "layout floating"
 
 [[on-window-detected]]
-    if.app-id = "com.tencent.qqmusic"
+    if.app-id = "com.tencent.QQMusicMac"
     run = "layout floating"
 
 [[on-window-detected]]
     if.app-id = "com.tencent.xinWeChat"
+    run = "layout floating"
+
+[[on-window-detected]]
+    if.app-id = "5ZSL2CJU2T.com.dingtalk.mac"
     run = "layout floating"
 
 [[on-window-detected]]
