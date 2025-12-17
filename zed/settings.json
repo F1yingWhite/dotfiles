@@ -1,0 +1,59 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "ssh_connections": [
+    {
+      "host": "10.130.128.54",
+      "args": [],
+      "projects": []
+    }
+  ],
+  "terminal": {
+    "font_size": 13.0,
+    "blinking": "on"
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "preview_tabs": {
+    "enabled": false
+  },
+  "relative_line_numbers": true,
+  "gutter": {
+    "line_numbers": true
+  },
+  "minimap": {
+    "show": "auto",
+    "thumb": "always"
+  },
+  "cursor_blink": true,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "buffer_font_fallbacks": [
+    "Maple Mono CN",
+    "HarmonyOS Sans SC"
+  ],
+  "buffer_font_family": "Jetbrainsmono nerd font",
+  "file_types": {},
+  "linked_edits": true,
+  "soft_wrap": "editor_width",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 14.0,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
+  }
+}

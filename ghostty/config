@@ -1,4 +1,4 @@
-font-family = "Maple Font"
+font-family = "Jetbrains Mono Nerd"
 font-size = 14
 macos-titlebar-style = transparent
 font-style = Medium
@@ -13,3 +13,4 @@ quit-after-last-window-closed=true
 theme = ayu
 
 custom-shader = "~/.config/ghostty/shaders/cursor_smear.glsl"
+shell-integration-features = ssh-terminfo,ssh-env

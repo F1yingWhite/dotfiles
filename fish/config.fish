@@ -11,7 +11,9 @@ export https_proxy=http://127.0.0.1:7890
 export http_proxy=http://127.0.0.1:7890
 export all_proxy=socks5://127.0.0.1:7890
 export EDITOR="nvim"
-
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_INSTALL_FROM_API=1
 export UV_PYPY_INSTALL_MIRROR=https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
 export UV_COMPILE_BYTECODE=1
 uv generate-shell-completion fish | source
@@ -43,7 +45,7 @@ end
 alias cls='clear; fastfetch' # clear terminal
 alias c='clear'
 alias l='eza -lh  --icons=auto' # long list
-alias ls='eza --icons=auto' # short list
+alias ls='eza --icons' # short list
 alias 'la'='ls -a'
 alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 alias ld='eza -lhD --icons=auto' # long list dirs
