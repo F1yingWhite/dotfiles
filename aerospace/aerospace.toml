@@ -120,6 +120,10 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     run = "layout floating"
 
 [workspace-to-monitor-force-assignment]
+    1 = "Built-in Retina Display"
+    2 = "Built-in Retina Display"
+    3 = "Built-in Retina Display"
+    4 = "Built-in Retina Display"
     7 = "G27H7"
     8 = "G27H7"
     9 = "G27H7"
